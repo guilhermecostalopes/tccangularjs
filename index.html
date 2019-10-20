@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="tcc-angularjs" >
+<head>
+    <base href="/tcc-angularjs/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>TCC</title>
+
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0/angular-material.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+</head>
+<body layout="column">
+
+</body>
+
+<!--ASSETS-->
+<script src="assets/js/ngfileupload/ng-file-upload-all.js" defer></script>
+
+<!-- Angular Material Library -->
+<script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0/angular-material.js"></script>
+
+<!--CONFIGS-->
+<script src="config/modules.js"></script>
+<script src="config/routes.js"></script>
+<script src="config/stores.js"></script>
+<script src="config/events.js"></script>
+
+<!--INIT-->
+<script src="init.js"></script>
+
+<!--FILTERS-->
+<script src="commons/filters/mascaras.js"></script>
+
+<!-- SERVICES -->
+<script src="commons/services/util/textHelper.js"></script>
+<script src="commons/services/data/ydnService.js"></script>
+
+<!-- VIEWS -->
+<script src="views/reaproveitar-documento/service/reaproveitar-documento.service.js"></script>
+<script src="views/configurardocumento/consulta/configurarDocumentoConsultaFactory.js"></script>
+
+<!--DIRECTIVES-->
+<script src="commons/directives/longPress.js"></script>
+<script src="commons/directives/somente-numeros.directive.js"></script>
+<script src="commons/directives/upload/upload.directive.js"></script>
+<script src="commons/directives/loading.directive.js"></script>
+
+<!--CONTROLLERS-->
+<script src="commons/conteudoController.js"></script>
+<script src="views/homeController.js"></script>
+<script src="views/usuario/usuarioController.js"></script>
+
+<!-- Plugins mascaras -->
+<script src="assets/js/plugins/ngMask/ngMask.js"></script>
+<script src="assets/js/plugins/angular-input-masks/angular-input-masks-standalone.js"></script>
+<script src="assets/js/plugins/ng-file-upload/ng-file-upload.min.js"></script>
+
+</body>
+</html>
