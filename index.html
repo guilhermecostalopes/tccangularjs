@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="tcc-angularjs" >
 <head>
-    <base href="/tcc-angularjs/">
+    <base href="/angularjs/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,6 +17,15 @@
 <body layout="column">
 
 </body>
+
+<!--ANGULAR-->
+<script src="angular/v_1_7_8/angular.min.js"></script>
+<script src="angular/v_1_7_8/angular-locale_pt-br.js"></script>
+<script src="angular/v_1_7_8/angular-route.min.js"></script>
+<script src="angular/v_1_7_8/angular-touch.min.js"></script>
+<script src="angular/v_1_7_8/angular-animate.min.js"></script>
+<script src="angular/v_1_7_8/angular-aria.min.js"></script>
+<script src="angular/v_1_7_8/angular-messages.min.js"></script>
 
 <!--ASSETS-->
 <script src="assets/js/ngfileupload/ng-file-upload-all.js" defer></script>
@@ -36,28 +45,20 @@
 <script src="commons/filters/mascaras.js"></script>
 
 <!-- SERVICES -->
-<script src="commons/services/util/textHelper.js"></script>
-<script src="commons/services/data/ydnService.js"></script>
+<script src="service/homeService.js"></script>
+<script src="service/usuario/usuarioService.js"></script>
+<script src="service/grupo/grupoService.js"></script>
 
 <!-- VIEWS -->
 <script src="views/reaproveitar-documento/service/reaproveitar-documento.service.js"></script>
 <script src="views/configurardocumento/consulta/configurarDocumentoConsultaFactory.js"></script>
 
-<!--DIRECTIVES-->
-<script src="commons/directives/longPress.js"></script>
-<script src="commons/directives/somente-numeros.directive.js"></script>
-<script src="commons/directives/upload/upload.directive.js"></script>
-<script src="commons/directives/loading.directive.js"></script>
-
 <!--CONTROLLERS-->
-<script src="commons/conteudoController.js"></script>
 <script src="controller/homeController.js"></script>
+<script src="controller/usuario/usuarioPesquisaController.js"></script>
 <script src="controller/usuario/usuarioController.js"></script>
-
-<!-- Plugins mascaras -->
-<script src="assets/js/plugins/ngMask/ngMask.js"></script>
-<script src="assets/js/plugins/angular-input-masks/angular-input-masks-standalone.js"></script>
-<script src="assets/js/plugins/ng-file-upload/ng-file-upload.min.js"></script>
+<script src="controller/grupo/grupoPesquisaController.js"></script>
+<script src="controller/grupo/grupoController.js"></script>
 
 </body>
 </html>
